@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SISTEMA DE ENSINO</title>
+</head>
+
+<style type="text/css">
+
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.labels {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		height: 100%;
+		margin: 10%;
+
+	}
+
+	.forms {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		height: 100%;
+		margin: 10%;
+	}
+
+	.cadastro {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		height: 50%;
+		align-items: left;
+		justify-content: left;
+	}
+
+	.cadastro > img {
+		height: 25%;
+		width: 25%;
+	}
+
+	.radios {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		width: 40%;
+	}
+
+	.radios > input{
+		margin: 3px;
+	}
+
+	.dados {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		height: 50%;
+		align-items: left;
+		justify-content: center;
+	}
+
+	.field {
+		display: flex;
+		flex-direction: row;
+	}
+
+</style>
+
+<body>
+
+	<h1>Sistema de Ensino</h1>
+
+	<fieldset class="cadastro">
+		<legend>CADASTRO</legend>
+
+		<div class="labels">
+			
+		</div>
+
+		<div class="forms">
+			<label>Matricula</label>
+			<input type="text" name="te" placeholder="textp">
+			<label>Nome</label>
+			<input type="text" name="te" placeholder="textp">
+			<h3>Turma</h3>
+			<div class="radios">
+				<label>411</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>412</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>413</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>421</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>422</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>423</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>431</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>432</label>
+				<input type="radio" name="turma" placeholder="textp">
+				<label>433</label>
+				<input type="radio" name="turma" placeholder="textp">
+			</div>
+			<label>Telefone</label>
+			<input type="text" name="te" placeholder="textp">
+			<label>Endereço</label>
+			<input type="text" name="te" placeholder="textp">
+			<label for="estado">Estado:</label>
+			<select name="estado" id="cars">
+			    <option value="Rs">rs</option>
+			    <option value="rj">rj</option>
+			</select>
+
+			<div class="buttons">
+					<button> cadastrar aluno</button>
+					<button>LImpar campos</button>
+
+			</div>
+
+		</div>
+
+		<img src="https://ayine.com.br/wp-content/uploads/2022/03/Miolo-diagonal-O-livro-dos-amigos-site.png">
+
+	</fieldset>
+
+	<fieldset class="dados">
+		<legend>DADOS</legend>
+		<p>Matricula: </p>
+		<p>Nome: </p>
+		<p>Turma: </p>
+		<p>Telefone: </p>		
+		<p>Endereço: </p>
+		<p>Estado: </p>
+
+	</fieldset>
+
+</body>
+</html>
