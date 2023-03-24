@@ -18,18 +18,19 @@
 	.labels {
 		display: flex;
 		flex-direction: column;
-		width: 25%;
+		width:30%;
 		height: 100%;
 		margin: 10%;
-
+		gap: 4%;
 	}
 
 	.forms {
 		display: flex;
 		flex-direction: column;
-		width: 25%;
+		width: 30%;
 		height: 100%;
 		margin: 10%;
+		gap: 5%;
 	}
 
 	.cadastro {
@@ -37,20 +38,21 @@
 		flex-direction: row;
 		width: 50%;
 		height: 50%;
-		align-items: left;
-		justify-content: left;
+		align-items: center;
+		justify-content: center;
+		padding: 5%;
 	}
 
 	.cadastro > img {
-		height: 25%;
-		width: 25%;
+		height: 50%;
+		width: 50%;
 	}
 
 	.radios {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		width: 40%;
+		width: 50%;
 	}
 
 	.radios > input{
@@ -71,6 +73,11 @@
 		flex-direction: row;
 	}
 
+	.turma {
+		
+		margin-bottom: 90%;
+
+	}
 </style>
 
 <body>
@@ -81,15 +88,18 @@
 		<legend>CADASTRO</legend>
 
 		<div class="labels">
-			
+			<label>Matricula</label>
+			<label>Nome</label>
+			<label class="turma">Turma</label>
+			<label>Telefone</label>
+			<label>Endereço</label>
+			<label>Estado:</label>
+			<button> cadastrar aluno</button>
 		</div>
 
 		<div class="forms">
-			<label>Matricula</label>
 			<input type="text" name="te" placeholder="textp">
-			<label>Nome</label>
 			<input type="text" name="te" placeholder="textp">
-			<h3>Turma</h3>
 			<div class="radios">
 				<label>411</label>
 				<input type="radio" name="turma" placeholder="textp">
@@ -110,18 +120,14 @@
 				<label>433</label>
 				<input type="radio" name="turma" placeholder="textp">
 			</div>
-			<label>Telefone</label>
 			<input type="text" name="te" placeholder="textp">
-			<label>Endereço</label>
 			<input type="text" name="te" placeholder="textp">
-			<label for="estado">Estado:</label>
 			<select name="estado" id="cars">
 			    <option value="Rs">rs</option>
 			    <option value="rj">rj</option>
 			</select>
 
 			<div class="buttons">
-					<button> cadastrar aluno</button>
 					<button>LImpar campos</button>
 
 			</div>
